@@ -5,10 +5,19 @@ from django.db import models
 
 
 class Blog(models.Model):
-    title = models.CharField(max_length=200)
-    pub_date = models.DateTimeField()
-    body = models.TextField()
+    title = models.CharField(max_length=250)
+    pub_date = models.DateField()
     image = models.ImageField(upload_to='images/')
+    body = models.TextField(default='')
+
+    def __str__(self):
+        return self.title
+
+    def body_summary(self):
+        return self.body[:200]
+
+    def custome_pub_date(self):
+        return self.pub_date.strftime('%b %e %Y') # strftime (customises date format)
 
 
 
