@@ -45,7 +45,7 @@ the jobs app => and put the home.html inside it -->
             }
         }
         </style> -->
-        
+
         <!-- Custom styles for this template -->
         <link href="album.css" rel="stylesheet">
     </head>
@@ -84,7 +84,7 @@ the jobs app => and put the home.html inside it -->
                         {% for job in jobs.all %}
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
-                                <image class="card-img-top" src="{{ job.image.url }}">
+                                <img class="card-img-top" src="{{ job.image.url }}" height="300">
                                 <div class="card-body">
                                     <p class="card-text">{{ job.summary }}</p>
                                 </div>
@@ -99,7 +99,7 @@ the jobs app => and put the home.html inside it -->
 
         <footer class="text-muted">
             <div class="container text-center">  <!-- 'text-center' class to centralize the text -->
-                <p>© Nina Noleto {% now "Y" %}</p>
+                <br><p>© Nina Noleto {% now "Y" %}</p>
             </div>
         </footer>
 
