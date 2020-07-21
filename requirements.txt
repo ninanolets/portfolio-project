@@ -20,10 +20,14 @@ cryptography==2.9.2
 cssselect==1.1.0
 dbus-python==1.2.16
 distlib==0.3.0
+<<<<<<< HEAD
 distro==1.4.0
 distro-info===0.23ubuntu1
 Django==3.0.6
 entrypoints==0.3
+=======
+Django==3.0.7
+>>>>>>> 6df11343477606b63149f8f512c0554d238d0f8c
 filelock==3.0.12
 gunicorn==20.0.2
 httplib2==0.14.0
